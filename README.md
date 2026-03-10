@@ -1,2 +1,49 @@
-# DESAFIO-QA-BEEDOO-2026
-Repositório contendo a análise, cenários de teste e relatório de bugs desenvolvidos para o desafio técnico de Analista de Qualidade de Software Júnior.
+# 1️⃣ Análise inicial da aplicação
+
+A aplicação consiste em um módulo simples de cadastro e listagem de cursos.
+O objetivo é permitir que usuários registrem novos cursos e visualizem os cursos cadastrados.
+
+Funcionalidades identificadas:
+
+cadastro de curso
+
+listagem de cursos
+
+validação de campos do formulário
+
+atualização da lista após cadastro
+
+# 2️⃣ Principais fluxos
+
+Fluxos identificados:
+
+Fluxo principal:
+
+• cadastrar curso válido
+
+• salvar curso
+
+• curso aparece na lista
+
+Fluxos alternativos:
+
+• tentar cadastrar curso com campo vazio
+
+• cadastrar curso com caracteres especiais
+
+• cadastrar cursos duplicados
+
+# 3️⃣ Pontos críticos para teste
+
+Exemplo:
+
+validação de campos obrigatórios
+
+comportamento da aplicação com dados inválidos
+
+atualização correta da lista após cadastro
+
+comportamento da aplicação com múltiplos cliques no botão de salvar
+
+inserção de dados duplicados
+
