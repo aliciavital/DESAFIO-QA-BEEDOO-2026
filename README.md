@@ -56,7 +56,7 @@ Os bugs identificados durante os testes estão documentados no arquivo:
 
 As evidências da execução dos testes estão disponíveis na pasta:
 
-[Ver evidências dos testes](documentos/evidencias)
+[Ver evidências dos testes](docs/evidencias)
 
 Cada imagem corresponde a um caso de teste executado.
 
