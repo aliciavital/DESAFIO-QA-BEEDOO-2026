@@ -2,15 +2,15 @@
 
 ## Bug 1 — Cadastro permitido com campo obrigatório vazio
 
-Passos para reproduzir
+Passos para reproduzir:
 1. Acessar a página de cadastro
 2. Deixar o campo obrigatório vazio
 3. Clicar em salvar
 
-Resultado atual
-O curso é cadastrado mesmo sem preencher o campo.
+Resultado atual:
+O curso é cadastrado mesmo sem preencher o campo obrigatório.
 
-Resultado esperado
+Resultado esperado:
 O sistema deveria impedir o cadastro e exibir mensagem de erro.
 
 Severidade: Alta
@@ -19,15 +19,15 @@ Severidade: Alta
 
 ## Bug 2 — Layout quebra com nome de curso muito longo
 
-Passos para reproduzir
+Passos para reproduzir:
 1. Inserir um nome de curso muito longo
 2. Clicar em salvar
 
-Resultado atual
+Resultado atual:
 O curso é salvo e a interface da lista fica desproporcional.
 
-Resultado esperado
-O sistema deveria limitar caracteres ou manter o layout estável.
+Resultado esperado:
+O sistema deveria limitar a quantidade de caracteres ou manter o layout da interface estável.
 
 Severidade: Média
 
@@ -35,14 +35,14 @@ Severidade: Média
 
 ## Bug 3 — Sistema permite cadastro de cursos duplicados
 
-Passos para reproduzir
+Passos para reproduzir:
 1. Cadastrar um curso
 2. Cadastrar o mesmo curso novamente
 
-Resultado atual
+Resultado atual:
 O sistema permite cursos duplicados.
 
-Resultado esperado
+Resultado esperado:
 O sistema deveria impedir duplicação.
 
 Severidade: Média
@@ -51,14 +51,14 @@ Severidade: Média
 
 ## Bug 4 — Sistema aceita apenas espaços em branco como nome
 
-Passos para reproduzir
+Passos para reproduzir:
 1. Inserir apenas espaços no campo
 2. Clicar em salvar
 
-Resultado atual
+Resultado atual:
 O curso é cadastrado mesmo sem conteúdo válido.
 
-Resultado esperado
+Resultado esperado:
 O sistema deveria tratar o campo como vazio e impedir cadastro.
 
 Severidade: Alta
@@ -67,14 +67,14 @@ Severidade: Alta
 
 ## Bug 5 — Sistema permite datas inválidas
 
-Passos para reproduzir
+Passos para reproduzir:
 1. Inserir data final anterior à data inicial
 2. Salvar curso
 
-Resultado atual
+Resultado atual:
 O curso é cadastrado mesmo com datas inválidas.
 
-Resultado esperado
+Resultado esperado:
 O sistema deveria impedir cadastro com datas inválidas.
 
 Severidade: Média
@@ -83,14 +83,14 @@ Severidade: Média
 
 ## Bug 6 — Sistema permite número de vagas inválido
 
-Passos para reproduzir
+Passos para reproduzir:
 1. Inserir número negativo ou zero
 2. Salvar curso
 
-Resultado atual
-Curso é cadastrado normalmente.
+Resultado atual:
+O curso é cadastrado normalmente mesmo com valor inválido.
 
-Resultado esperado
+Resultado esperado:
 Sistema deveria rejeitar o valor.
 
 Severidade: Média
@@ -99,15 +99,15 @@ Severidade: Média
 
 ## Bug 7 — Exclusão de curso não funciona
 
-Passos para reproduzir
+Passos para reproduzir:
 1. Cadastrar curso
 2. Clicar em excluir
 3. Atualizar página
 
-Resultado atual
+Resultado atual:
 O curso permanece na lista.
 
-Resultado esperado
+Resultado esperado:
 O curso deveria ser removido.
 
 Severidade: Alta
@@ -116,14 +116,14 @@ Severidade: Alta
 
 ## Bug 8 — Informações do curso não são exibidas
 
-Passos para reproduzir
+Passos para reproduzir:
 1. Cadastrar curso preenchendo todos os campos
 2. Visualizar lista de cursos
 
-Resultado atual
-Endereço, instrutor e link não aparecem. Não existe opção de visualizar detalhes ou editar.
+Resultado atual:
+Informações como endereço, instrutor e link não são exibidas na listagem. Também não existe opção de visualizar detalhes ou editar o curso.
 
-Resultado esperado
+Resultado esperado:
 Todas as informações deveriam estar visíveis ou acessíveis.
 
 Severidade: Média
