@@ -49,14 +49,14 @@ Os cenários de teste foram documentados em uma planilha do Google Sheets:
 
 Os bugs identificados durante os testes estão documentados no arquivo:
 
-bugs.md
+[Ver relatório de bugs](Bugs.md)
 
 
 ## Evidências
 
 As evidências da execução dos testes estão disponíveis na pasta:
 
-/evidencias
+[Ver evidências dos testes](documentos/evidencias)
 
 Cada imagem corresponde a um caso de teste executado.
 
