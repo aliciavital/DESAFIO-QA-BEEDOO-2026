@@ -1,106 +1,129 @@
 # Relatório de Bugs
 
-## Bug 1 — Cadastro com campo obrigatório vazio
+## Bug 1 — Cadastro permitido com campo obrigatório vazio
 
-Passos:
-1. Acessar criação de curso
-2. Deixar campo obrigatório vazio
-3. Clicar em criar curso
+Passos para reproduzir
+1. Acessar a página de cadastro
+2. Deixar o campo obrigatório vazio
+3. Clicar em salvar
 
-Resultado atual:
-Sistema permite cadastrar curso sem preencher o campo.
+Resultado atual
+O curso é cadastrado mesmo sem preencher o campo.
 
-Resultado esperado:
-Sistema deveria impedir cadastro com campo obrigatório vazio.
+Resultado esperado
+O sistema deveria impedir o cadastro e exibir mensagem de erro.
 
 Severidade: Alta
+
 
 
 ## Bug 2 — Layout quebra com nome de curso muito longo
 
-Passos:
-1. Inserir nome de curso muito longo
-2. Criar curso
+Passos para reproduzir
+1. Inserir um nome de curso muito longo
+2. Clicar em salvar
 
-Resultado atual:
-Curso é salvo e o layout da lista fica desproporcional.
+Resultado atual
+O curso é salvo e a interface da lista fica desproporcional.
 
-Resultado esperado:
-Sistema deveria limitar caracteres ou manter layout estável.
+Resultado esperado
+O sistema deveria limitar caracteres ou manter o layout estável.
 
 Severidade: Média
 
 
-## Bug 3 — Sistema permite cursos duplicados
 
-Passos:
+## Bug 3 — Sistema permite cadastro de cursos duplicados
+
+Passos para reproduzir
 1. Cadastrar um curso
-2. Cadastrar novamente o mesmo curso
+2. Cadastrar o mesmo curso novamente
 
-Resultado atual:
-Sistema permite cursos duplicados.
+Resultado atual
+O sistema permite cursos duplicados.
 
-Resultado esperado:
-Sistema deveria impedir duplicação.
-
-Severidade: Média
-
-
-## Bug 4 — Sistema permite cadastro com número de vagas inválido
-
-Passos:
-1. Inserir número de vagas negativo
-2. Criar curso
-
-Resultado atual:
-Curso é cadastrado normalmente.
-
-Resultado esperado:
-Sistema deveria validar e impedir número inválido.
+Resultado esperado
+O sistema deveria impedir duplicação.
 
 Severidade: Média
 
 
-## Bug 5 — Sistema permite datas inválidas
 
-Passos:
-1. Inserir data final anterior à inicial
-2. Criar curso
+## Bug 4 — Sistema aceita apenas espaços em branco como nome
 
-Resultado atual:
-Curso é cadastrado mesmo com datas inválidas.
+Passos para reproduzir
+1. Inserir apenas espaços no campo
+2. Clicar em salvar
 
-Resultado esperado:
-Sistema deveria impedir cadastro com datas inválidas.
+Resultado atual
+O curso é cadastrado mesmo sem conteúdo válido.
 
-Severidade: Média
-
-
-## Bug 6 — Exclusão de curso não funciona
-
-Passos:
-1. Cadastrar um curso
-2. Clicar em excluir
-
-Resultado atual:
-Curso permanece na lista.
-
-Resultado esperado:
-Curso deveria ser removido da lista.
+Resultado esperado
+O sistema deveria tratar o campo como vazio e impedir cadastro.
 
 Severidade: Alta
 
 
-## Bug 7 — Informações do curso não são exibidas
 
-Passos:
+## Bug 5 — Sistema permite datas inválidas
+
+Passos para reproduzir
+1. Inserir data final anterior à data inicial
+2. Salvar curso
+
+Resultado atual
+O curso é cadastrado mesmo com datas inválidas.
+
+Resultado esperado
+O sistema deveria impedir cadastro com datas inválidas.
+
+Severidade: Média
+
+
+
+## Bug 6 — Sistema permite número de vagas inválido
+
+Passos para reproduzir
+1. Inserir número negativo ou zero
+2. Salvar curso
+
+Resultado atual
+Curso é cadastrado normalmente.
+
+Resultado esperado
+Sistema deveria rejeitar o valor.
+
+Severidade: Média
+
+
+
+## Bug 7 — Exclusão de curso não funciona
+
+Passos para reproduzir
+1. Cadastrar curso
+2. Clicar em excluir
+3. Atualizar página
+
+Resultado atual
+O curso permanece na lista.
+
+Resultado esperado
+O curso deveria ser removido.
+
+Severidade: Alta
+
+
+
+## Bug 8 — Informações do curso não são exibidas
+
+Passos para reproduzir
 1. Cadastrar curso preenchendo todos os campos
 2. Visualizar lista de cursos
 
-Resultado atual:
-Endereço, nome do instrutor e link do curso não aparecem. Não existe opção de visualizar detalhes ou editar.
+Resultado atual
+Endereço, instrutor e link não aparecem. Não existe opção de visualizar detalhes ou editar.
 
-Resultado esperado:
-Sistema deveria exibir todas as informações ou permitir visualizar/editar o curso.
+Resultado esperado
+Todas as informações deveriam estar visíveis ou acessíveis.
 
 Severidade: Média
