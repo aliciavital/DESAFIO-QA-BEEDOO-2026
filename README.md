@@ -38,3 +38,25 @@ Exemplo:
 - inserção de dados duplicados
 - exibição correta das informações cadastradas
 
+## Casos de teste
+
+Os cenários de teste foram documentados em uma planilha do Google Sheets:
+
+[Link para a planilha de testes](https://docs.google.com/spreadsheets/d/1e0xXxtMr45McYpNpT7-RM1daDcquDQ-6AT7bUaUtGdY/edit?usp=sharing)
+
+
+## Relatório de bugs
+
+Os bugs identificados durante os testes estão documentados no arquivo:
+
+bugs.md
+
+
+## Evidências
+
+As evidências da execução dos testes estão disponíveis na pasta:
+
+/evidencias
+
+Cada imagem corresponde a um caso de teste executado.
+
