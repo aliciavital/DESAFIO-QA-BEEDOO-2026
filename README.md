@@ -60,3 +60,11 @@ As evidências da execução dos testes estão disponíveis na pasta:
 
 Cada imagem corresponde a um caso de teste executado.
 
+## Ferramentas e conceitos utilizados
+
+- Testes manuais exploratórios
+- Documentação de bugs
+- Git/GitHub para versionamento
+- Organização de evidências de teste
+- Conceitos de QA aplicados em contexto ágil (Scrum)
+
